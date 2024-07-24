@@ -16,17 +16,21 @@ Building a docker image including my specified commands in dockerfile and projec
 
 docker build -t app1 . 
 
-Checking if the created image is present and if there are more images:
+Checking if the created image is present and if there are more images: <br/>
+
 docker image list
 
-Running the container named "my-running-app" and the image within it to produce the code result:
+Running the container named "my-running-app" and the image within it to produce the code result: <br/>
+
 docker run --name my-running-app app1
 
 # Commands used in command line for pushing the Docker image to a container registry:
 
-Tagging the local image with the remote repository name and tag:
+Tagging the local image with the remote repository name and tag: <br/>
+
 docker tag app1 dockdomas/ind_task2
 
-Pushing the local image to the repository:
+Pushing the local image to the repository: <br/>
+
 docker push dockdomas/ind_task2
 
