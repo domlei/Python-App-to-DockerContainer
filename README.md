@@ -1,4 +1,4 @@
-Simple webscraping code containerized in a docker container.
+Simple webscraping code containerized in a docker container. Made with the goal of practising webscraping and containerizing applications with Docker.
 
 Tag of the image:
 dockdomas/ind_task2:latest
