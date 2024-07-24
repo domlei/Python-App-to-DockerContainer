@@ -14,7 +14,7 @@ In the Python code I'm using a convenient website made for practicing webscrapin
 
 Building a docker image including my specified commands in dockerfile and project environment. Additionally, giving the image a name "app1" for clarity purposes in case other images are present: <br/>
 
-docker build -t app1 . 
+$${\color{blue}docker build -t app1 .}$$ docker build -t app1 . 
 
 Checking if the created image is present and if there are more images: <br/>
 
