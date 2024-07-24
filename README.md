@@ -12,20 +12,20 @@ In the Python code I'm using a convenient website made for practicing webscrapin
 
 # Commands used in the command line terminal for the project environment:
 
-Building a docker image including my specified commands in dockerfile and project environment. Additionally, giving the image a name "app1" for clarity purposes in case other images are present: < br / >
+Building a docker image including my specified commands in dockerfile and project environment. Additionally, giving the image a name "app1" for clarity purposes in case other images are present:
 docker build -t app1 . 
 
-Checking if the created image is present and if there are more images: < br / >
+Checking if the created image is present and if there are more images:
 docker image list
 
-Running the container named "my-running-app" and the image within it to produce the code result: < br / >
+Running the container named "my-running-app" and the image within it to produce the code result:
 docker run --name my-running-app app1
 
 # Commands used in command line for pushing the Docker image to a container registry:
 
-Tagging the local image with the remote repository name and tag: < br / >
+Tagging the local image with the remote repository name and tag:
 docker tag app1 dockdomas/ind_task2
 
-Pushing the local image to the repository: < br / >
+Pushing the local image to the repository:
 docker push dockdomas/ind_task2
 
