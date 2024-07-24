@@ -10,22 +10,26 @@ In Pycharm - quite easy to obtain requirements: Tools -> Sync Python Requirement
 
 In the Python code I'm using a convenient website made for practicing webscraping: https://www.scrapethissite.com/pages/simple/
 
-# Comments regarding the building of the docker image.
-Commands used in the command line terminal for the project environment:
+# Commands used in the command line terminal for the project environment:
 
-docker build -t app1 . 
 # Building a docker image including my specified commands in dockerfile and project environment. Additionally, giving the image a name "app1" for clarity purposes in case other images are present.
+docker build -t app1 . 
 
-docker image list
+
 # Checking if the created image is present and if there are more images.
+docker image list
 
-docker run --name my-running-app app1
+
 # Running the container named "my-running-app" and the image within it to produce the code result.
+docker run --name my-running-app app1
 
-Commands used in command line for pushing the Docker image to a container registry:
 
-docker tag app1 dockdomas/ind_task2
+# Commands used in command line for pushing the Docker image to a container registry:
+
 # Tagging the local image with the remote repository name and tag.
+docker tag app1 dockdomas/ind_task2
 
-docker push dockdomas/ind_task2
+
 # Pushing the local image to the repository.
+docker push dockdomas/ind_task2
+
